@@ -1,0 +1,115 @@
+.footer {
+  background-color: #000000;
+}
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+.footer-container p {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  line-height: 1.125;
+  letter-spacing: 1.5px;
+  color: #cccccc;
+}
+.direitos {
+  font-family: Poppins;
+  font-size: 1rem;
+  line-height: 1.125;
+  letter-spacing: 1.5px;
+  color: #746565;
+  margin: -20px 60px;
+
+  padding: 20px 10px;
+}
+.footer-container ul {
+  margin-top: -10px;
+}
+.footer-container li {
+  padding: 10px 0;
+  color: white;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  position: relative;
+}
+.email::before {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 31px;
+  background: url("/VectorEmail.svg") no-repeat center;
+  position: absolute;
+  top: 12px;
+  left: -50px;
+}
+.whatsapp::before {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url("/Vectorwpp.svg") no-repeat center;
+  position: absolute;
+  top: 5px;
+  left: -50px;
+}
+.instagram::before {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url("/VectorInstagram.svg") no-repeat center;
+  position: absolute;
+  top: 8px;
+  left: -50px;
+}
+.whatsapp {
+  color: rgb(235, 255, 241) !important;
+}
+.email {
+  color: rgb(255, 238, 239) !important;
+}
+.footer-container li a {
+  color: rgb(252, 233, 249);
+}
+@media (max-width: 800px) {
+  .footer-container {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-container li {
+    margin: 0 60px;
+    padding: 20px 0;
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  .footer-container p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.125rem;
+  }
+  .direitos {
+    text-align: center;
+    margin: -20px 0px;
+    padding: 20px 0px;
+  }
+  .instagram::before {
+    top: 11px;
+  }
+  .whatsapp::before {
+    top: 12px;
+  }
+  .email::before {
+    top: 17px;
+  }
+}
