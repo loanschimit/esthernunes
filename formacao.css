@@ -191,13 +191,6 @@ li {
     top: 30px;
   }
 }
-.formacao-container::after {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url("/Detalhe.svg") no-repeat center;
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
+.footer-container {
+  position: relative;
 }

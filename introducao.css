@@ -14,7 +14,10 @@
   margin-bottom: 30px;
   position: relative;
 }
-.introducao h1::before {
+div {
+  position: relative;
+}
+.detalhesvg {
   content: "";
   display: block;
   width: 130px;
@@ -23,7 +26,7 @@
   position: absolute;
   top: -20px;
   left: -30px;
-  z-index: 1;
+  z-index: -1;
 }
 .introducao p {
   font-size: 1.5rem;
@@ -41,7 +44,7 @@
   .introducao h1 {
     font-size: 4rem;
   }
-  .introducao h1::before {
+  .detalhesvg {
     left: -40px;
     top: -22px;
   }
@@ -61,14 +64,20 @@
     justify-items: center;
     text-align: center;
   }
-  .introducao h1::before {
+  .detalhesvg {
     left: 20px;
-    top: -22px;
+    top: -50px;
   }
   .introducao h1 {
     margin-top: -20px;
   }
   .introducao p {
     margin-top: -25px;
+  }
+}
+@media (max-width: 380px) {
+  .detalhesvg {
+    top: -50px;
+    left: -20px;
   }
 }

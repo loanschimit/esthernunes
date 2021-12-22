@@ -1,6 +1,16 @@
 .footer {
   background-color: #000000;
 }
+.detalhesvg2 {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("/Detalhe.svg") no-repeat center;
+  position: absolute;
+  top: -55px;
+}
+
 .footer-container {
   max-width: 1200px;
   padding: 120px 20px;
